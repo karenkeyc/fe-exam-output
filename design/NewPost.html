@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Post</title>
+</head>
+<body>
+  
+  <!-- <header> -->
+  <nav>
+    <ul class="breadcrumb">
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__item-link" href="#">HOME</a></li>
+      <li class="breadcrumb__item">Create New Post</li>
+    </ul>
+  </nav>
+
+  <section>
+    <form>
+      <div class="new-post__actions">
+        <a href="#" class="new-post__item new-post__item--save-post">Save Post</a>
+        <a href="#" class="new-post__item new-post__item--cancel-post">Cancel</a>
+      </div>
+  
+      <div class="new-post__container">
+        <p class="new-post__timestamp">2019.06.19</p>
+      </div>
+  
+      <div class="new-post__container">
+        <input class="new-post__input new-post__title" type="text" maxlength="100" size="100" placeholder="Title">
+        <div class="new-post__input new-post__upload">
+          <label htmlFor="upload-button">
+            <!-- {image.preview ? (
+              <img src={image.preview} alt="dummy" width="300" height="300" />
+            ) : (
+              <>
+                <span className="fa-stack fa-2x mt-3 mb-2">
+                  <i className="fas fa-circle fa-stack-2x" />
+                  <i className="fas fa-store fa-stack-1x fa-inverse" />
+                </span>
+                <h5 className="text-center">Upload your photo</h5>
+              </>
+            )} -->
+          </label>
+          <!-- <input
+            type="file"
+            id="upload-button"
+            style={{ display: "none" }}
+            onChange={handleChange}
+          /> -->
+          <!-- <button onClick={handleUpload}>Upload</button> -->
+        </div>
+        <input class="new-post__input new-post__content" type="text" maxlength="100" size="100" placeholder="Content">
+      </div>
+    </form>
+  </section>
+
+  <!-- <footer> -->
+
+</body>
+</html>
