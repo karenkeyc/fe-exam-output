@@ -1,9 +1,15 @@
 @import '../styles/global.scss';
 header {
   font-family: $sans-serif;
+  position: fixed;
+  background-color: #ffffff;
   margin: 0 auto;
-  max-width: 90%;
-  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 102px;
+  z-index: 6;
 }
 
 .header {
@@ -14,16 +20,19 @@ header {
 }
 
 .header__logo {
-  margin-left: 127px;
-  margin-top: 15px;
+  margin-left: 210px;
+  margin-top: 24px;
 }
 
 .header__actions {
-  margin-right: 103px;
-  margin-top: 17px;
+  margin-right: 186px;
+  margin-top: 26px;
 }
 
 .header__actions--login {
   font-weight: 700;
+  font-size: 1.17em;
+  text-decoration: none;
+  color: $dark;
   letter-spacing: 1px;
 }

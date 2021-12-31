@@ -14,7 +14,17 @@ $yg-bold: 'YuGothic Bold', sans-serif;
 $yg-medium: 'YuGothic Medium', sans-serif;
 $sans-serif: 'Montserrat', sans-serif;
 $dark: #101010;
+$light: #ffff;
+$gray: #292929;
+
 
 body {
   font-family: $sans-serif;
+}
+
+div#root {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: stretch;
 }

@@ -1,0 +1,64 @@
+@import '../styles/global.scss';
+footer {
+  position: relative;
+  // top: -132px;
+}
+.footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 60px 0 80px;
+}
+.upper__container {
+  background: $gray;
+  padding: 51px 122px;
+}
+.logo__container {
+  padding-top: 28px;
+}
+.upper__container-text {
+  margin: 39px 0 16px 0;
+}
+.back-to-top__container {
+    position: absolute;
+    z-index: 4;
+    right: 203px;
+    bottom: 87px;
+}
+.square__container {
+  border: none;
+  cursor: pointer;
+  width: 143%;
+  height: 70px;
+}
+.top__desc {
+  font-family: $sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 6px -1px -6px 0;
+}
+.top__arrow {
+  padding-top: 2px;
+}
+.description{
+  font-family: $yg-bold;
+  font-size: 16px;
+  color: $light;
+  width: 36%;
+  word-spacing: 1px;
+  margin: 0 0 6px 0;
+}
+.copyright__container {
+  background: $dark;
+  padding: 20px 125px 18px 129px;
+}
+.copyright__text{
+  font-family: $sans-serif;
+  text-align: center;
+  color: $light;
+  font-size: 15.2px;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+}

@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import '../assets/styles/header.scss'
 import logo_header from '../assets/images/blog_dark.png'
 
 const Header = () => {
+  const [userState, setUserState] = useState({ redirect: '/login', text: 'LOGIN', isLogged: true})
+  const isLogged = () => {
+    if(userState.isLogged === true){
+      setUserState({ redirect: '/logout', text: 'LOGOUT', isLogged: false});
+    } else {
+      setUserState({ redirect: '/login', text: 'LOGIN', isLogged: true});      
+    }
+  }
+
   return (
     <header>
       <div className="header">
@@ -10,7 +20,7 @@ const Header = () => {
           <img src={logo_header} alt="Blog logo" />
         </div>
         <div className="header__actions">
-          <h3 className="header__actions--login">LOGOUT</h3>
+          <Link onClick={isLogged} className="header__actions--login" to={userState.redirect}>{userState.text}</Link>     
         </div>
       </div>
     </header>

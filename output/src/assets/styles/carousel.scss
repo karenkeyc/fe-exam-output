@@ -2,7 +2,7 @@
 .carousel {
   position: relative;
   width: 90.7%;
-  margin: 15px 79px;
+	margin: 102px 79px;
 }
 .carousel__container {
 	position: relative;
@@ -18,8 +18,8 @@
 }
 .carousel__caption-header{
   font-family: $yg-bold;
-  color: #ffffff;
-  background: black;
+  color: $light;
+  background: $dark;
   padding: 9px 17px 0 19px;
   font-size: 60px;
   line-height: 150%;
@@ -31,7 +31,7 @@
 .carousel__caption-date {
   letter-spacing: 4.5px;
   font-size: 30.2px;
-  color: black;
+  color: $dark;
 }
 .carousel__item {
   position: absolute;
@@ -50,7 +50,7 @@
   object-fit: cover;
 }
 .carousel__control {
-	color: white;
+	color: $light;
 	cursor: pointer;
 	display: none;
 	font-size: 40px;
@@ -59,7 +59,7 @@
 	position: absolute;
 	top: 51.1%;
 	width: 40px;
-	z-index: 10;
+	z-index: 4;
 	-webkit-transform: translate(0, -50%);
 	-ms-transform: translate(0, -50%);
 	transform: translate(0, -50%);
@@ -90,7 +90,7 @@
 	bottom: 0;
 	left: 4px;
 	right: 3px;
-	z-index: 10;
+	z-index: 4;
 }
 .carousel__list {
 	display: inline-block;
@@ -103,12 +103,12 @@
 	font-size: 103px;
 }
 .carousel-bullet:hover {
-	color: #101010;
+	color: $dark;
 }
 #carousel-1:checked ~ .control-1 ~ .carousel__indicators li:nth-child(1) .carousel-bullet,
 #carousel-2:checked ~ .control-2 ~ .carousel__indicators li:nth-child(2) .carousel-bullet,
 #carousel-3:checked ~ .control-3 ~ .carousel__indicators li:nth-child(3) .carousel-bullet {
-	color: #101010;
+	color: $dark;
 	font-style: normal;
 	font-weight: 400;
 }
