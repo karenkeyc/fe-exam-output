@@ -1,18 +1,17 @@
 import React from 'react'
-import { BrowserRouter as Router} from "react-router-dom";
-import Header from './Header'
-import Carousel from './Carousel'
-import NewsList from './NewsList'
-import Footer from './Footer'
+import Header from '../components/Header'
+import Carousel from '../components/Carousel'
+import NewsList from '../components/NewsList'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
-    <Router>
+    <>
       <Header />
       <Carousel/>
       <NewsList/>
       <Footer/>
-    </Router>
+    </>
   )
 }
 
