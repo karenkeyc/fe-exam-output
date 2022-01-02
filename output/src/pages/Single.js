@@ -1,10 +1,12 @@
 import React from 'react'
+import Breadcrumb from '../components/Breadcrumb'
 
 const Single = () => {
   return (
-    <div>
-      <h1>Single</h1>
-    </div>
+    <>
+      <Breadcrumb/>
+      <h1>Single...</h1>
+    </>
   )
 }
 

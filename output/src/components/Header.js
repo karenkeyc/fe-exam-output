@@ -6,6 +6,9 @@ import logo_header from '../assets/images/blog_dark.png'
 const Header = () => {
   const [userState, setUserState] = useState({ redirect: '/login', text: 'LOGIN', isLogged: true})
   const isLogged = () => {
+    // if userstate islogged is true
+    // login
+    // if path is /login or /register , show close button
     if(userState.isLogged === true){
       setUserState({ redirect: '/logout', text: 'LOGOUT', isLogged: false});
     } else {
