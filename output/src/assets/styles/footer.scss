@@ -1,4 +1,4 @@
-@import '../styles/global.scss';
+@import "../styles/global.scss";
 footer {
   position: relative;
   // top: -132px;
@@ -21,10 +21,10 @@ footer {
   margin: 39px 0 16px 0;
 }
 .back-to-top__container {
-    position: absolute;
-    z-index: 4;
-    right: 203px;
-    bottom: 87px;
+  position: absolute;
+  z-index: 4;
+  right: 203px;
+  bottom: 87px;
 }
 .square__container {
   border: none;
@@ -42,7 +42,7 @@ footer {
 .top__arrow {
   padding-top: 2px;
 }
-.description{
+.description {
   font-family: $yg-bold;
   font-size: 16px;
   color: $light;
@@ -54,7 +54,7 @@ footer {
   background: $dark;
   padding: 20px 125px 18px 129px;
 }
-.copyright__text{
+.copyright__text {
   font-family: $sans-serif;
   text-align: center;
   color: $light;

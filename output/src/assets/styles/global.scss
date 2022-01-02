@@ -1,22 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 
 @font-face {
-  font-family:'YuGothic Bold';
+  font-family: "YuGothic Bold";
   src: url("../fonts/YuGothic\ Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family:'YuGothic Medium';
+  font-family: "YuGothic Medium";
   src: url("../fonts/YuGothic\ Medium.ttf") format("truetype");
 }
 
-$yg-bold: 'YuGothic Bold', sans-serif;
-$yg-medium: 'YuGothic Medium', sans-serif;
-$sans-serif: 'Montserrat', sans-serif;
+$yg-bold: "YuGothic Bold", sans-serif;
+$yg-medium: "YuGothic Medium", sans-serif;
+$sans-serif: "Montserrat", sans-serif;
 $dark: #101010;
 $light: #ffff;
 $gray: #292929;
-
 
 body {
   font-family: $sans-serif;
