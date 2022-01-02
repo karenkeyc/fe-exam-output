@@ -1,6 +1,5 @@
 @import './global.scss';
-.login {
-  // background: coral;
+.login-register {
   position: relative;
   width: 100%;
   height: 80vh;
@@ -9,12 +8,20 @@
 .form__container {
   position: relative;
   overflow: hidden;
-  // background: aquamarine;
   display: flex;
   flex-flow: column nowrap;
   align-items: stretch;
   margin: auto 34% auto 35.4%;
   padding-top: 34px;
+}
+.form__container--register {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  margin: auto 34% auto 35.4%;
+  margin-top: -26px;
 }
 .form__inner {
   width: 30.2%;
@@ -33,6 +40,13 @@
   justify-content: flex-start;
   align-items: stretch;
   padding: 10px 0 10px 0;
+}
+.form__group--register {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 11px 0 12px 0;
 }
 .form__label {
   font-family: $sans-serif;
@@ -67,6 +81,14 @@
   color: $dark;
   padding: 10px 13px 0 19px;
   margin: 0 4px 0 6px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.form__group-info--register {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: #101010;
+  padding: 10px 13px 0 19px;
   letter-spacing: 2px;
   text-align: center;
 }

@@ -2,7 +2,10 @@ import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useNavigate  } from 'react-router-dom'
 import { userAdded } from '../app/userSlice'
-import '../assets/styles/login.scss'
+import Header from '../components/Header'
+import NewsList from '../components/NewsList'
+import Footer from '../components/Footer'
+import '../assets/styles/loginregister.scss'
 
 const Login = () => {
   const [email, setEmail] = useState("")
@@ -23,8 +26,10 @@ const Login = () => {
   };
 
   return (
+    <>
+    <Header/>
     <section>
-      <div className="login">
+      <div className="login-register">
         <form className="form__container" onSubmit={handleSubmit}>
           <h1 className="form__header-title">LOGIN</h1>
           <div className="form__group">
@@ -57,6 +62,9 @@ const Login = () => {
         </form>
       </div>
     </section>
+    <NewsList/>
+    <Footer/>
+    </>
 
   )
 }

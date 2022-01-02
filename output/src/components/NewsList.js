@@ -27,7 +27,7 @@ const NewsList = () => {
     <div className="news__header">
       <h1 className="news__title">NEWS</h1>
       <div className="news__action">
-        <Link className="news__create-post" to="/create">Create New Post</Link>
+        <Link className="news__create-post" to="/create-new-post">Create New Post</Link>
       </div>
     </div>
     <div className="posts">
