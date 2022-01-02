@@ -23,9 +23,9 @@ const Login = () => {
   };
 
   return (
-    <section className="login">
-      <form className="form__container" onSubmit={handleSubmit}>
-        <div className="form__inner">
+    <section>
+      <div className="login">
+        <form className="form__container" onSubmit={handleSubmit}>
           <h1 className="form__header-title">LOGIN</h1>
           <div className="form__group">
             <label className="form__label">Email</label>
@@ -54,8 +54,8 @@ const Login = () => {
               <Link className="form__group-link" to="/register"> REGISTER HERE</Link>
             </span>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </section>
 
   )
