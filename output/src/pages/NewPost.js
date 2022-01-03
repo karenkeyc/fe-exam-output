@@ -21,7 +21,7 @@ const NewPost = () => {
         <div className="new-post__container">
           <input className="new-post__input new-post__title" type="text" maxLength={100} size={100} placeholder="Title" />
           <div className="new-post__input new-post__upload">
-            <label htmlfor="upload-button">
+            <label htmlFor="upload-button">
               {/* {image.preview ? (
             <img src={image.preview} alt="dummy" width="300" height="300" />
           ) : (
