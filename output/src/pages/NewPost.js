@@ -6,7 +6,6 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 const NewPost = () => {
-
   const showPreview = ({ target }) => {
     if (target.files.length > 0) {
       const src = URL.createObjectURL(target.files[0]);
@@ -17,6 +16,7 @@ const NewPost = () => {
       uploadBtn.style.display = "none";
     }
   }
+
   return (
     <>
       <Header />
@@ -32,7 +32,6 @@ const NewPost = () => {
           </div>
           <div className="new-post__container">
             <textarea className="new-post__input new-post__title" type="text" rows="2" placeholder="Title" />
-
             {/* image upload */}
             <div className="new-post__file-upload">
               <div className="new-post__file-upload-container">
@@ -46,7 +45,6 @@ const NewPost = () => {
               </div>
             </div>
             {/* image upload */}
-
             <textarea className="new-post__input new-post__content" type="text" rows="3" placeholder="Content" />
           </div>
         </form>
