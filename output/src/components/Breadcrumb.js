@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../assets/styles/breadcrumb.scss"
 
-const Breadcrumb = ({title}) => {
+const Breadcrumb = ({ title }) => {
   return (
     <nav>
       <ul className="breadcrumb">
