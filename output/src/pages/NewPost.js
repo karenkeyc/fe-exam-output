@@ -20,7 +20,7 @@ const NewPost = () => {
   return (
     <>
       <Header />
-      <Breadcrumb />
+      <Breadcrumb title="Create New Post"/>
       <section className="new-post">
         <form className="new-post__form">
           <div className="new-post__actions">

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../assets/styles/breadcrumb.scss"
 
-const Breadcrumb = () => {
+const Breadcrumb = ({title}) => {
   return (
     <nav>
       <ul className="breadcrumb">
@@ -11,7 +11,7 @@ const Breadcrumb = () => {
             HOME
           </Link>
         </li>
-        <li className="breadcrumb__item">Create New Post</li>
+        <li className="breadcrumb__item">{title}</li>
       </ul>
     </nav>
   );

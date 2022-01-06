@@ -7,14 +7,15 @@ import img1 from '../assets/images/carousel_img1.png'
 import '../assets/styles/singlepost.scss'
 
 const Single = () => {
+  const title = "サンプルテキストサンプル ルテキストサンプルテキストサンプルテキストサンプル ルテキスト";
   return (
     <>
       <Header />
-      <Breadcrumb />
+      <Breadcrumb title={title}/>
       <section className="single-post">
         <form className="single-post__form">
           <div className="single-post__actions">
-            <Link className="new-post__save" to="/single-edit-view">
+            <Link className="single-post__save" to="/single-edit-view">
               Edit Post</Link>
           </div>
           <div className="single-post__container">
@@ -23,7 +24,9 @@ const Single = () => {
           <div className="single-post__container">
             <p className="single-post__title">サンプルテキストサンプル ルテキストサンプルテキ
               ストサンプルテキストサンプル ルテキスト </p>
-            <img src={img1} alt="" className="single-post__image" />
+            <div className="single-post__image-container">
+              <img src={img1} alt="" className="single-post__image" />
+            </div>
             <div className="single-post__content">
               <p className="content">
                 ここにはテキストが入ります。ここにはテキストが入りますここにはテキストが入りますここにはテキストが入りますここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入りますここにはテキストが入りますここにはテキストが入りますここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入りますここにはテキストが入りますここにはテキストが入りますここにはテキストが入ります。
