@@ -35,12 +35,14 @@ const NewPost = () => {
             <p className="new-post__timestamp">2019.06.19</p>
           </div>
           <div className="new-post__container">
-            <textarea
-              className="new-post__input new-post__title"
-              type="text"
-              rows="2"
-              placeholder="Title"
-            />
+            <div className="new-post__title-container">
+              <textarea
+                className="new-post__title"
+                type="text"
+                rows="2"
+                placeholder="Title"
+              />
+            </div>
             {/* image upload */}
             <div className="new-post__file-upload">
               <div className="new-post__file-upload-container">
@@ -62,12 +64,14 @@ const NewPost = () => {
               </div>
             </div>
             {/* image upload */}
-            <textarea
-              className="new-post__input new-post__content"
-              type="text"
-              rows="3"
-              placeholder="Content"
-            />
+            <div className="new-post__content-container">
+              <textarea
+                className="new-post__input new-post__content"
+                type="text"
+                rows="12"
+                placeholder="Content"
+              />
+            </div>
           </div>
         </form>
       </section>

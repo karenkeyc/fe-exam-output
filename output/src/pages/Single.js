@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Breadcrumb from "../components/Breadcrumb";
+import Comments from "../components/Comments"
 import Footer from "../components/Footer";
 import img1 from "../assets/images/carousel_img1.png";
 import "../assets/styles/singlepost.scss";
@@ -43,48 +44,7 @@ const Single = () => {
         </form>
       </section>
 
-      <section className="comments">
-        <hr className="divider" />
-        <div className="comment-section">
-          <h1 className="comment-section__header">COMMENT</h1>
-        </div>
-        <div className="comment-section">
-          <div className="comment-box__container">
-            <div className="comment-box">
-              <p className="comment-box__content">
-                ここにはテキストが入ります。ここにはテキストが入りますここにはテキストが入りますここにはテキストが入りますここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入りますここにはテキストが入りますここにはテキストが入りますここにはテキストが入ります。
-              </p>
-              <p className="comment-box__timestamp">
-                3 months ago
-                {/* Comment data, formatted by duration from now */}
-              </p>
-            </div>
-          </div>
-          <div className="comment-box__container">
-            <div className="comment-box">
-              <p className="comment-box__content">
-                ここにはテキストが入ります。ここにはテキストが入りますここにはテキストが入りますここにはテキストが入りますここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入りますここにはテキストが入りますここにはテキストが入りますここにはテキストが入ります。
-              </p>
-              <p className="comment-box__timestamp">
-                3 months ago
-                {/* Comment data, formatted by duration from now */}
-              </p>
-            </div>
-          </div>
-          <form className="create-comment">
-            <div className="create-comment__container">
-              <textarea
-                className="create-comment__textarea"
-                type="text"
-                rows="5"
-                placeholder="Write comment"
-              />
-              <button className="create-comment__button">SUBMIT</button>
-            </div>
-          </form>
-        </div>
-      </section>
-
+      <Comments/>
       <Footer />
     </>
   );
