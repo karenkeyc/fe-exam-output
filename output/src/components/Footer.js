@@ -4,6 +4,10 @@ import logo from "../assets/images/blog_light.png";
 import up from "../assets/images/arrow_up.png";
 
 const Footer = () => {
+  const backToTop = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
   return (
     <footer>
       <div className="footer">
@@ -22,7 +26,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="back-to-top__container">
-            <button className="square__container">
+            <button className="square__container" onClick={backToTop}>
               <img className="top__arrow" src={up} alt="top arrow" />
               <p className="top__desc">TOP</p>
             </button>
