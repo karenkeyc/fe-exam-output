@@ -7,6 +7,7 @@ import "../assets/styles/loginregister.scss";
 const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmpassword, setConfirmpassword] = useState("");
   const dispatch = useDispatch();
   const navigate = useHistory();
 
@@ -50,8 +51,8 @@ const Register = () => {
                 className="form__input"
                 type="password"
                 name="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                value={confirmpassword}
+                onChange={(e) => setConfirmpassword(e.target.value)}
               />
             </div>
             <div className="form__group--register">
