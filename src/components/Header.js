@@ -33,7 +33,10 @@ const Header = () => {
           {isUser.isLoggedIn === true ? (
             <button
               className="header__actions--logout"
-              onClick={() => dispatch(userAdded({ isLoggedIn: false }))}
+              onClick={() => {
+                dispatch(userAdded({ isLoggedIn: false }));
+                navigate.push("/logout");
+              }}
             >
               LOGOUT
             </button>
