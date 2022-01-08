@@ -1,4 +1,4 @@
-@import "../styles/global.scss";
+@import "../styles/_global.scss";
 .single-post {
   margin: 0 175px 0 202px;
   padding-top: 43px;
@@ -8,7 +8,7 @@
   z-index: 7;
 }
 .single-post__form {
-  padding-right: 5px;
+  padding-bottom: 150px;
 }
 .single-post__actions {
   float: right;
@@ -30,7 +30,7 @@
 .single-post__title {
   font-family: $yg-bold;
   font-size: 40px;
-  resize: none;
+  // resize: none;
   margin-top: -2px;
   letter-spacing: 4px;
   padding: 13px 59px 0px 0px;
@@ -40,7 +40,7 @@
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  margin: 27px 7px 37px 0;
+  margin: 31px 8px 37px 0;
 }
 .single-post__image-container {
   position: relative;
@@ -141,4 +141,65 @@
   width: 18.78%;
   padding: 23px 6px 23px 0;
   margin: 0px 0px 7px -1px;
+}
+
+// edited forms
+.single-post__form--edit {
+  margin-bottom: -36px;
+}
+.single-post__textarea-title-container,
+.single-post__content {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-right: 7px;
+}
+.single-post__title--edit {
+  font-family: $yg-bold;
+  font-size: 40px;
+  resize: none;
+  width: 93.7%;
+  margin-top: -2px;
+  letter-spacing: 4px;
+  padding: 11px 49px 7px 19px;
+}
+.single-post__file-upload { //same as new-post__file-upload
+  display:flex;
+  flex-flow: column nowrap;
+  align-items:center;
+  justify-content:center;
+  margin: 31px 7px 37px 0;
+}
+.single-post__file-upload-container{ // same as .new-post__file-upload-container
+  width: 100%;
+}
+#file-preview--edit {
+  width: 100%;
+  height: 540px;
+}
+.file-preview__container--edit{
+  background: #D6D6D6;
+  height: 540px;
+  display: flex;
+  position: relative;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.content__textarea {
+  font-family: $yg-medium;
+  color: $dark;
+  font-size: 18.6px;
+  resize: none;
+  margin-top: -1px;
+  letter-spacing: 1.2px;
+  padding: 13px 22px 19px 23px;
+  line-height: 40px;
+  width: 95.7%;
+
+  // font-size: 18px;
+  // line-height: 40px;
+  // letter-spacing: 1.8px;
 }

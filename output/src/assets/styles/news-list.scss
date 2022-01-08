@@ -1,4 +1,4 @@
-@import "../styles/global.scss";
+@import "../styles/_global.scss";
 .news {
   margin: -49px 184px 139px 202px;
 }
@@ -58,6 +58,10 @@
 .post__title {
   font-family: $yg-bold;
   font-size: 20px;
+}
+.single-post__link {
+  text-decoration: none;
+  color: $dark;
 }
 .posts__group {
   display: none;

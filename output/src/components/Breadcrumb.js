@@ -11,7 +11,7 @@ const Breadcrumb = ({ title }) => {
             HOME
           </Link>
         </li>
-        <li className="breadcrumb__item">{title}</li>
+        <li className="breadcrumb__item breadcrumb-text">{title}</li>
       </ul>
     </nav>
   );

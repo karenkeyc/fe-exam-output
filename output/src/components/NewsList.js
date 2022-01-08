@@ -20,6 +20,8 @@ const NewsList = () => {
       event.target.style.display = "none";
     }
   };
+  const title = `サンプルテキストサンプル\nルテキストサンプルテキストサンプルテキストサンプル ルテキ`;
+  const time = "2019.06.19";
 
   return (
     <section className="news">
@@ -36,44 +38,41 @@ const NewsList = () => {
           <div className="posts__row">
             <article className="post__container">
               <div className="post__single-container">
-                <img
-                  className="post__image"
-                  src={article_img}
-                  alt="news_photo"
-                />
-                <p className="post__date">2019.06.19</p>
-                <p className="post__title">
-                  サンプルテキストサンプル
-                  ルテキストサンプルテキストサンプルテキストサンプル ルテキ
-                </p>
+                <Link className="single-post__link" to="/single-post-view">
+                  <img
+                    className="post__image"
+                    src={article_img}
+                    alt="news_photo"
+                  />
+                  <p className="post__date">{time}</p>
+                  <p className="post__title">{title}</p>
+                </Link>
               </div>
             </article>
             <article className="post__container">
               <div className="post__single-container">
-                <img
-                  className="post__image"
-                  src={article_img}
-                  alt="news_photo"
-                />
-                <p className="post__date">2019.06.19</p>
-                <p className="post__title">
-                  サンプルテキストサンプル
-                  ルテキストサンプルテキストサンプルテキストサンプル ルテキ
-                </p>
+                <Link className="single-post__link" to="/single-post-view">
+                  <img
+                    className="post__image"
+                    src={article_img}
+                    alt="news_photo"
+                  />
+                  <p className="post__date">{time}</p>
+                  <p className="post__title">{title}</p>
+                </Link>
               </div>
             </article>
             <article className="post__container">
               <div className="post__single-container">
-                <img
-                  className="post__image"
-                  src={article_img}
-                  alt="news_photo"
-                />
-                <p className="post__date">2019.06.19</p>
-                <p className="post__title">
-                  サンプルテキストサンプル
-                  ルテキストサンプルテキストサンプルテキストサンプル ルテキ
-                </p>
+                <Link className="single-post__link" to="/single-post-view">
+                  <img
+                    className="post__image"
+                    src={article_img}
+                    alt="news_photo"
+                  />
+                  <p className="post__date">{time}</p>
+                  <p className="post__title">{title}</p>
+                </Link>
               </div>
             </article>
           </div>
@@ -82,44 +81,41 @@ const NewsList = () => {
           <div className="posts__row">
             <article className="post__container">
               <div className="post__single-container">
-                <img
-                  className="post__image"
-                  src={article_img}
-                  alt="news_photo"
-                />
-                <p className="post__date">2019.06.19</p>
-                <p className="post__title">
-                  サンプルテキストサンプル
-                  ルテキストサンプルテキストサンプルテキストサンプル ルテキ
-                </p>
+                <Link className="single-post__link" to="/single-post-view">
+                  <img
+                    className="post__image"
+                    src={article_img}
+                    alt="news_photo"
+                  />
+                  <p className="post__date">{time}</p>
+                  <p className="post__title">{title}</p>
+                </Link>
               </div>
             </article>
             <article className="post__container">
               <div className="post__single-container">
-                <img
-                  className="post__image"
-                  src={article_img}
-                  alt="news_photo"
-                />
-                <p className="post__date">2019.06.19</p>
-                <p className="post__title">
-                  サンプルテキストサンプル
-                  ルテキストサンプルテキストサンプルテキストサンプル ルテキ
-                </p>
+                <Link className="single-post__link" to="/single-post-view">
+                  <img
+                    className="post__image"
+                    src={article_img}
+                    alt="news_photo"
+                  />
+                  <p className="post__date">{time}</p>
+                  <p className="post__title">{title}</p>
+                </Link>
               </div>
             </article>
             <article className="post__container">
               <div className="post__single-container">
-                <img
-                  className="post__image"
-                  src={article_img}
-                  alt="news_photo"
-                />
-                <p className="post__date">2019.06.19</p>
-                <p className="post__title">
-                  サンプルテキストサンプル
-                  ルテキストサンプルテキストサンプルテキストサンプル ルテキ
-                </p>
+                <Link className="single-post__link" to="/single-post-view">
+                  <img
+                    className="post__image"
+                    src={article_img}
+                    alt="news_photo"
+                  />
+                  <p className="post__date">{time}</p>
+                  <p className="post__title">{title}</p>
+                </Link>
               </div>
             </article>
           </div>
@@ -128,44 +124,41 @@ const NewsList = () => {
           <div className="posts__row">
             <article className="post__container">
               <div className="post__single-container">
-                <img
-                  className="post__image"
-                  src={article_img}
-                  alt="news_photo"
-                />
-                <p className="post__date">2019.06.19</p>
-                <p className="post__title">
-                  サンプルテキストサンプル
-                  ルテキストサンプルテキストサンプルテキストサンプル ルテキ
-                </p>
+                <Link className="single-post__link" to="/single-post-view">
+                  <img
+                    className="post__image"
+                    src={article_img}
+                    alt="news_photo"
+                  />
+                  <p className="post__date">{time}</p>
+                  <p className="post__title">{title}</p>
+                </Link>
               </div>
             </article>
             <article className="post__container">
               <div className="post__single-container">
-                <img
-                  className="post__image"
-                  src={article_img}
-                  alt="news_photo"
-                />
-                <p className="post__date">2019.06.19</p>
-                <p className="post__title">
-                  サンプルテキストサンプル
-                  ルテキストサンプルテキストサンプルテキストサンプル ルテキ
-                </p>
+                <Link className="single-post__link" to="/single-post-view">
+                  <img
+                    className="post__image"
+                    src={article_img}
+                    alt="news_photo"
+                  />
+                  <p className="post__date">{time}</p>
+                  <p className="post__title">{title}</p>
+                </Link>
               </div>
             </article>
             <article className="post__container">
               <div className="post__single-container">
-                <img
-                  className="post__image"
-                  src={article_img}
-                  alt="news_photo"
-                />
-                <p className="post__date">2019.06.19</p>
-                <p className="post__title">
-                  サンプルテキストサンプル
-                  ルテキストサンプルテキストサンプルテキストサンプル ルテキ
-                </p>
+                <Link className="single-post__link" to="/single-post-view">
+                  <img
+                    className="post__image"
+                    src={article_img}
+                    alt="news_photo"
+                  />
+                  <p className="post__date">{time}</p>
+                  <p className="post__title">{title}</p>
+                </Link>
               </div>
             </article>
           </div>
@@ -174,44 +167,41 @@ const NewsList = () => {
           <div className="posts__row">
             <article className="post__container">
               <div className="post__single-container">
-                <img
-                  className="post__image"
-                  src={article_img}
-                  alt="news_photo"
-                />
-                <p className="post__date">2019.06.19</p>
-                <p className="post__title">
-                  サンプルテキストサンプル
-                  ルテキストサンプルテキストサンプルテキストサンプル ルテキ
-                </p>
+                <Link className="single-post__link" to="/single-post-view">
+                  <img
+                    className="post__image"
+                    src={article_img}
+                    alt="news_photo"
+                  />
+                  <p className="post__date">{time}</p>
+                  <p className="post__title">{title}</p>
+                </Link>
               </div>
             </article>
             <article className="post__container">
               <div className="post__single-container">
-                <img
-                  className="post__image"
-                  src={article_img}
-                  alt="news_photo"
-                />
-                <p className="post__date">2019.06.19</p>
-                <p className="post__title">
-                  サンプルテキストサンプル
-                  ルテキストサンプルテキストサンプルテキストサンプル ルテキ
-                </p>
+                <Link className="single-post__link" to="/single-post-view">
+                  <img
+                    className="post__image"
+                    src={article_img}
+                    alt="news_photo"
+                  />
+                  <p className="post__date">{time}</p>
+                  <p className="post__title">{title}</p>
+                </Link>
               </div>
             </article>
             <article className="post__container">
               <div className="post__single-container">
-                <img
-                  className="post__image"
-                  src={article_img}
-                  alt="news_photo"
-                />
-                <p className="post__date">2019.06.19</p>
-                <p className="post__title">
-                  サンプルテキストサンプル
-                  ルテキストサンプルテキストサンプルテキストサンプル ルテキ
-                </p>
+                <Link className="single-post__link" to="/single-post-view">
+                  <img
+                    className="post__image"
+                    src={article_img}
+                    alt="news_photo"
+                  />
+                  <p className="post__date">{time}</p>
+                  <p className="post__title">{title}</p>
+                </Link>
               </div>
             </article>
           </div>

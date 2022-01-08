@@ -1,4 +1,4 @@
-@import "../styles/global.scss";
+@import "../styles/_global.scss";
 nav {
   font-family: $yg-medium;
 }
@@ -18,6 +18,9 @@ nav {
   font-size: 0.9375em;
   padding-right: 39px;
 }
+// fix pixel perfect text
+// .breadcrumb-text {
+// }
 .breadcrumb__item-link {
   position: relative;
   float: left;

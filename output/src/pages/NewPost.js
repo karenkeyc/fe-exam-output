@@ -66,7 +66,7 @@ const NewPost = () => {
             {/* image upload */}
             <div className="new-post__content-container">
               <textarea
-                className="new-post__input new-post__content"
+                className="new-post__content"
                 type="text"
                 rows="12"
                 placeholder="Content"
