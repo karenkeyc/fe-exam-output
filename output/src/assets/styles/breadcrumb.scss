@@ -12,15 +12,18 @@ nav {
   z-index: 7;
 }
 .breadcrumb__item {
+  font-family: $yg-medium;
   color: $dark;
   float: left;
   letter-spacing: 2px;
-  font-size: 0.9375em;
+  font-size: 0.938em;
   padding-right: 39px;
 }
 // fix pixel perfect text
-// .breadcrumb-text {
-// }
+.breadcrumb-text {
+  letter-spacing: 2.55px;
+  font-size: 15px;
+}
 .breadcrumb__item-link {
   position: relative;
   float: left;
