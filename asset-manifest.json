@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/fe-exam-output/static/css/main.f3107572.css",
+    "main.js": "/fe-exam-output/static/js/main.b83f33f3.js",
+    "static/media/YuGothic Bold.ttf": "/fe-exam-output/static/media/YuGothic Bold.d02b25c46c4b2709c528.ttf",
+    "static/media/YuGothic Medium.ttf": "/fe-exam-output/static/media/YuGothic Medium.e1743323ed51ad393d7c.ttf",
+    "static/media/carousel_img1.png": "/fe-exam-output/static/media/carousel_img1.2e84be078a297ef0ce5e.png",
+    "static/media/article_img.png": "/fe-exam-output/static/media/article_img.38f532002ec1985d4072.png",
+    "static/media/carousel_img2.jpg": "/fe-exam-output/static/media/carousel_img2.b0769530ad2b7260b8a9.jpg",
+    "static/media/carousel_img3.jpg": "/fe-exam-output/static/media/carousel_img3.3bdc40ac7df5fc2669ca.jpg",
+    "index.html": "/fe-exam-output/index.html",
+    "main.f3107572.css.map": "/fe-exam-output/static/css/main.f3107572.css.map",
+    "main.b83f33f3.js.map": "/fe-exam-output/static/js/main.b83f33f3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3107572.css",
+    "static/js/main.b83f33f3.js"
+  ]
+}
