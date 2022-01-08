@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useHistory } from "react-router-dom";
 import "../assets/styles/header.scss";
 import logo_header from "../assets/images/blog_dark.png";
 
 const Header = (props) => {
   const [pathstate, setPathstate] = useState({ to: "/login", text: "LOGIN" });
   const location = useLocation();
-  const navigate = useNavigate();
+  const navigate = useHistory();
 
   useEffect(() => {
     const textchange = document.querySelector(".header__actions--login");

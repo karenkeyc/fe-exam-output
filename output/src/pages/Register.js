@@ -1,17 +1,14 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { userAdded } from "../app/userSlice";
-import Header from "../components/Header";
-import NewsList from "../components/NewsList";
-import Footer from "../components/Footer";
 import "../assets/styles/loginregister.scss";
 
 const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
-  const navigate = useNavigate();
+  const navigate = useHistory();
   const islogged = useSelector((state) => state.user.credential.isLoggedIn);
 
   const handleSubmit = (e) => {
@@ -21,13 +18,12 @@ const Register = () => {
     setPassword("");
     console.log(islogged);
     if (islogged) {
-      navigate("/");
+      navigate.push("/");
     }
   };
 
   return (
     <>
-      <Header />
       <section>
         <div className="login-register">
           <form className="form__container--register" onSubmit={handleSubmit}>
@@ -83,8 +79,6 @@ const Register = () => {
           </form>
         </div>
       </section>
-      <NewsList />
-      <Footer />
     </>
   );
 };

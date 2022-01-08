@@ -1,9 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Header from "../components/Header";
 import Breadcrumb from "../components/Breadcrumb";
 import Comments from "../components/Comments";
-import Footer from "../components/Footer";
 import img1 from "../assets/images/carousel_img1.png";
 import "../assets/styles/singlepost.scss";
 
@@ -24,8 +22,7 @@ const SingleEdit = () => {
   };
 
   return (
-    <>
-      <Header />
+    <> 
       <Breadcrumb title={title} />
       <section className="single-post">
         <form className="single-post__form--edit">
@@ -79,9 +76,7 @@ const SingleEdit = () => {
           </div>
         </form>
       </section>
-
       <Comments />
-      <Footer />
     </>
   );
 };

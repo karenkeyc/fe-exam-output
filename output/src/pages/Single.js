@@ -1,9 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Header from "../components/Header";
 import Breadcrumb from "../components/Breadcrumb";
 import Comments from "../components/Comments"
-import Footer from "../components/Footer";
 import img1 from "../assets/images/carousel_img1.png";
 import "../assets/styles/singlepost.scss";
 
@@ -13,7 +11,6 @@ const Single = () => {
   const content_text = "ここにはテキストが入ります。ここにはテキストが入りますここにはテキストが入りますここにはテキストが入りますここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入りますここにはテキストが入りますここにはテキストが入りますここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入りますここにはテキストが入りますここにはテキストが入りますここにはテキストが入ります。"
   return (
     <>
-      <Header />
       <Breadcrumb title={title} />
       <section className="single-post">
         <form className="single-post__form">
@@ -43,9 +40,7 @@ const Single = () => {
           </div>
         </form>
       </section>
-
       <Comments/>
-      <Footer />
     </>
   );
 };

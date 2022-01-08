@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../assets/styles/newpost.scss";
 import Breadcrumb from "../components/Breadcrumb";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 const NewPost = () => {
   const showPreview = ({ target }) => {
@@ -19,7 +17,6 @@ const NewPost = () => {
 
   return (
     <>
-      <Header />
       <Breadcrumb title="Create New Post" />
       <section className="new-post">
         <form className="new-post__form">
@@ -75,7 +72,6 @@ const NewPost = () => {
           </div>
         </form>
       </section>
-      <Footer />
     </>
   );
 };
