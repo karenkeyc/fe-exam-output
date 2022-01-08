@@ -9,16 +9,21 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
   const navigate = useHistory();
-  const islogged = useSelector((state) => state.user.credential.isLoggedIn);
+  const isUser = useSelector((state) => state.user.credential);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(userAdded({ email: email, password: password, isLoggedIn: true }));
-    setEmail("");
-    setPassword("");
-    console.log(islogged);
-    if (islogged) {
+    console.log(isUser);
+    if (isUser && isUser.isLoggedIn === false) {
+      dispatch(
+        userAdded({ email: email, password: password, isLoggedIn: true })
+      );
+      setEmail("");
+      setPassword("");
       navigate.push("/");
+      window.location.reload();
+    } else {
+      navigate.push("/login");
     }
   };
 

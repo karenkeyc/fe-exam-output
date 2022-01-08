@@ -11,28 +11,36 @@ header {
   height: 102px;
   z-index: 6;
 }
-
 .header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
 }
-
 .header__logo {
   margin-left: 210px;
   margin-top: 24px;
 }
-
 .header__actions {
   margin-right: 186px;
   margin-top: 26px;
 }
-
 .header__actions--login {
   font-weight: 700;
   font-size: 1.17em;
   text-decoration: none;
+  cursor: pointer;
   color: $dark;
   letter-spacing: 1px;
+}
+.header__actions--logout {
+  font-family: $sans-serif;
+  border: none;
+  font-weight: 700;
+  font-size: 1.18em;
+  cursor: pointer;
+  color: $dark;
+  background: $light;
+  letter-spacing: 1px;
+  margin-right: -6px;
 }

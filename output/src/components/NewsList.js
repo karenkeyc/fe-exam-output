@@ -1,9 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import "../assets/styles/news-list.scss";
 import article_img from "../assets/images/article_img.png";
 
 const NewsList = () => {
+  const isLoggedIn = useSelector((state) => state.user.credential.isLoggedIn);
   const loadMore = (event) => {
     let currentItems = 2;
     const elementList = [...document.querySelectorAll(".posts .posts__group")];
@@ -28,9 +30,11 @@ const NewsList = () => {
       <div className="news__header">
         <h1 className="news__title">NEWS</h1>
         <div className="news__action">
-          <Link className="news__create-post" to="/create-new-post">
-            Create New Post
-          </Link>
+          {isLoggedIn && (
+            <Link className="news__create-post" to="/create-new-post">
+              Create New Post
+            </Link>
+          )}
         </div>
       </div>
       <div className="posts">

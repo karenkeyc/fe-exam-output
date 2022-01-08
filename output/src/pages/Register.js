@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Link, useHistory } from "react-router-dom";
 import { userAdded } from "../app/userSlice";
 import "../assets/styles/loginregister.scss";
@@ -9,17 +9,13 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
   const navigate = useHistory();
-  const islogged = useSelector((state) => state.user.credential.isLoggedIn);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(userAdded({ email: email, password: password, isLoggedIn: true }));
+    dispatch(userAdded({ email: email, password: password, isLoggedIn: false }));
     setEmail("");
     setPassword("");
-    console.log(islogged);
-    if (islogged) {
-      navigate.push("/");
-    }
+    navigate.push("/");
   };
 
   return (

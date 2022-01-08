@@ -30,7 +30,6 @@
 .single-post__title {
   font-family: $yg-bold;
   font-size: 40px;
-  // resize: none;
   margin-top: -2px;
   letter-spacing: 4px;
   padding: 13px 59px 0px 0px;
@@ -132,6 +131,7 @@
 }
 .create-comment__button {
   border: none;
+  cursor: pointer;
   background: $dark;
   font-family: $sans-serif;
   font-weight: 700;
@@ -198,8 +198,4 @@
   padding: 13px 22px 19px 23px;
   line-height: 40px;
   width: 95.7%;
-
-  // font-size: 18px;
-  // line-height: 40px;
-  // letter-spacing: 1.8px;
 }
