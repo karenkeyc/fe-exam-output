@@ -7,11 +7,15 @@ const NewPost = () => {
   const showPreview = ({ target }) => {
     if (target.files.length > 0) {
       const src = URL.createObjectURL(target.files[0]);
+      const previewContainer = document.querySelector(
+        ".file-preview__container"
+      );
       let preview = document.getElementById("file-preview");
-      let uploadBtn = document.querySelector(".upload-image");
+      let uploadBtnLabel = document.querySelector(".upload-image__label");
+      previewContainer.style.background = "#b8dad9";
       preview.src = src;
       preview.style.display = "block";
-      uploadBtn.style.display = "none";
+      uploadBtnLabel.innerHTML = "CHANGE IMAGE";
     }
   };
 
